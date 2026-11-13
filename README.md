@@ -3,7 +3,7 @@
 This will transfer a file with a progress bar  
   
 Receiving computer:  
-nc -l 7000 > /home/chris/Video/movie.mkv  
+nc -l -p 7000 > /home/chris/Video/movie.mkv  
   
 Sending computer:  
 pv movie.mkv | nc -N 10.0.0.2 7000  
